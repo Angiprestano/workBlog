@@ -22,7 +22,7 @@ public class BlogPostService {
         //SECOND METHOD
         public BlogPost save(BlogPost body) {
             Random rndm = new Random();
-            body.setId(rndm.nextInt(1, 1000));
+            body.setId(rndm.nextInt(1, 5000));
             this.BlogPost.add(body);
             return body;
         }

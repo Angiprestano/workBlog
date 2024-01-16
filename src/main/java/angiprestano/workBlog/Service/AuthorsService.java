@@ -15,7 +15,7 @@ import java.util.Random;
 public class AuthorsService {
     private List<Authors> authors = new ArrayList<>();
 
-    public List<Authors> getAuthor() {
+    public List<Authors> getAuthors() {
         return this.authors;
     }
 
@@ -61,6 +61,9 @@ public class AuthorsService {
                 iterator.remove();
             }
         }
+    }
+
+    public void findByIdAndUpdate(int id) {
     }
 }
 
